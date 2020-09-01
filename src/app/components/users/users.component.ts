@@ -12,6 +12,8 @@ export class UsersComponent implements OnInit {
   showExtended: boolean = true;
   // If fetching data from an outside source
   loaded: boolean = false;
+  // Enabling add new user to button
+  enableAdd: boolean = true;
 
   constructor() { }
 
@@ -25,7 +27,8 @@ export class UsersComponent implements OnInit {
             street: '50 Main st',
             city: 'Boston',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/3'
         },
         {
           firstName: 'Kevin',
@@ -35,7 +38,8 @@ export class UsersComponent implements OnInit {
             street: '20 School st',
             city: 'Lynn',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/2'
         },
         {
           firstName: 'Karen',
@@ -45,7 +49,8 @@ export class UsersComponent implements OnInit {
             street: '55 Mill st',
             city: 'Miami',
             state: 'FL'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/1'
         }
       ];
 
