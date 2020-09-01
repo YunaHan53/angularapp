@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { User } from '../../models/User'
 // Decorator
@@ -9,12 +9,16 @@ import { User } from '../../models/User'
 })
 
 // export makes this class available outside of this file
-export class UserComponent {
+export class UserComponent implements OnInit {
   // Properties
   user: User;
 
   // Methods
   constructor() {
+
+  }
+
+  ngOnInit() {
     this.user = {
       firstName: 'John',
       lastName: 'Doe',
